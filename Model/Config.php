@@ -32,7 +32,7 @@ class Config
     }
 
     /**
-     * IS feature enabled
+     * Is feature enabled
      *
      * @param null|int $storeId
      * @return bool

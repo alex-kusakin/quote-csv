@@ -73,7 +73,11 @@ class Converter
         ];
     }
 
-    public function getFilename($quote)
+    /**
+     * @param Quote $quote
+     * @return string
+     */
+    public function getFilename(Quote $quote)
     {
         $hash = md5(microtime());
 

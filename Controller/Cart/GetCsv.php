@@ -77,6 +77,9 @@ class GetCsv extends Action implements ViewInterface
         );
     }
 
+    /**
+     * @return \Magento\Framework\Controller\Result\Redirect
+     */
     protected function redirectToCart()
     {
         return $this->resultRedirectFactory->create()
