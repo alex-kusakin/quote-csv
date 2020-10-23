@@ -67,7 +67,7 @@ class GetCsv extends Action implements ViewInterface
     public function execute()
     {
         if (!$this->config->isEnabled() || !$this->getQuote()->hasItems()) {
-            $this->redirectToCart();
+            return $this->redirectToCart();
         }
 
         return $this->fileFactory->create(
