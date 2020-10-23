@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Alex Kusakin
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="shopping_cart" translate="label" sortOrder="300" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Shopping Cart</label>
+            <tab>customer</tab>
+            <resource>AlexKusakin_QuoteCsv::config_shopping_cart</resource>
+            <group id="csv" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Print CSV Settings</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enable CSV Button</label>
+                    <comment>Once enabled, "Download CSV" button will be displayed on customer shopping cart page.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+
+
+

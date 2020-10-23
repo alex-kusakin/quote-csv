@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Alex Kusakin
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="checkout.cart.order.actions">
+            <block class="AlexKusakin\QuoteCsv\Block\Cart\Button" name="checkout.cart.order.actions.csv_button" template="AlexKusakin_QuoteCsv::cart/button.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

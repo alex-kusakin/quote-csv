@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Alex Kusakin
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <shopping_cart>
+            <csv>
+                <enabled>1</enabled>
+            </csv>
+        </shopping_cart>
+    </default>
+</config>

@@ -1,0 +1,19 @@
+{
+    "name": "alex-kusakin/module-quotecsv",
+    "description": "Download quote CSV file",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "magento/framework": "*"
+    }
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "AlexKusakin\\QuoteCsv\\": ""
+        }
+    }
+}
