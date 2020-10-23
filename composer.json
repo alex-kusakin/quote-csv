@@ -9,7 +9,7 @@
     },
     "require": {
         "magento/framework": "*"
-    }
+    },
     "autoload": {
         "files": [ "registration.php" ],
         "psr-4": {
