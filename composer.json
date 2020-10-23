@@ -1,5 +1,5 @@
 {
-    "name": "alex-kusakin/module-quotecsv",
+    "name": "alex-kusakin/quote-csv",
     "description": "Download quote CSV file",
     "type": "magento2-module",
     "version": "1.0.0",
