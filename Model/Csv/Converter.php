@@ -81,6 +81,6 @@ class Converter
     {
         $hash = md5(microtime());
 
-        return "export/quote_{$quote->getId()}_{$hash}csv";
+        return "export/quote_{$quote->getId()}_{$hash}.csv";
     }
 }

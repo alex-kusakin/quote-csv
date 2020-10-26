@@ -70,11 +70,16 @@ class GetCsv extends Action implements ViewInterface
             return $this->redirectToCart();
         }
 
-        return $this->fileFactory->create(
-            self::RESPONSE_FILE_NAME,
-            $this->converter->getCsvFile($this->getQuote()),
-            'var'
-        );
+        try {
+            return $this->fileFactory->create(
+                self::RESPONSE_FILE_NAME,
+                $this->converter->getCsvFile($this->getQuote()),
+                'var'
+            );
+        } catch (\Exception $e) {
+            $this->messageManager->addErrorMessage(__('Cannot create CSV file.'));
+            return $this->redirectToCart();
+        }
     }
 
     /**
