@@ -94,10 +94,15 @@ class GetCsvTest extends \PHPUnit\Framework\TestCase
     public function controllerProvider()
     {
         return [
+            // feature is disabled
             [true, false, false, false, true],
+            // cart is empty
             [false, true, false, false, true],
+            // both feature is disabled and cart is empty
             [false, false, false, false, true],
+            // success test - csv converting is triggered
             [true, true, false, true, false],
+            // error - casv converting thrown an exception
             [true, true, true, true, true],
         ];
     }
